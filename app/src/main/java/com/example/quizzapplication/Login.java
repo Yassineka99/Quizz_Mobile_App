@@ -90,6 +90,8 @@ public class Login extends AppCompatActivity {
                 if(edpass.equals(pass)&&edphone.equals(Phone))
                 {
                     Toast.makeText(Login.this, "Login confirmed", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(Login.this,Quizz1.class);
+                    startActivity(i);
                 }
                 else {
                     Toast.makeText(Login.this, "Press again to check", Toast.LENGTH_SHORT).show();

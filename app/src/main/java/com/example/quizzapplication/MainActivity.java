@@ -16,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     EditText name,lastname,phone,password ;
     Button b,b1 ;

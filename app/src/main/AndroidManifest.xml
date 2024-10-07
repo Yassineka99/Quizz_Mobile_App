@@ -13,6 +13,87 @@
         android:theme="@style/Theme.QuizzApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Math5"
+            android:exported="false" />
+        <activity
+            android:name=".Math4"
+            android:exported="false" />
+        <activity
+            android:name=".Math3"
+            android:exported="false" />
+        <activity
+            android:name=".Math2"
+            android:exported="false" />
+        <activity
+            android:name=".Math1"
+            android:exported="false" />
+        <activity
+            android:name=".Hi5"
+            android:exported="false" />
+        <activity
+            android:name=".Hi4"
+            android:exported="false" />
+        <activity
+            android:name=".Hi3"
+            android:exported="false" />
+        <activity
+            android:name=".Hi2"
+            android:exported="false" />
+        <activity
+            android:name=".Hi1"
+            android:exported="false" />
+        <activity
+            android:name=".Sc5"
+            android:exported="false" />
+        <activity
+            android:name=".Sc4"
+            android:exported="false" />
+        <activity
+            android:name=".Sc3"
+            android:exported="false" />
+        <activity
+            android:name=".Sc2"
+            android:exported="false" />
+        <activity
+            android:name=".Sc1"
+            android:exported="false" />
+        <activity
+            android:name=".IT5"
+            android:exported="false" />
+        <activity
+            android:name=".IT4"
+            android:exported="false" />
+        <activity
+            android:name=".IT3"
+            android:exported="false" />
+        <activity
+            android:name=".IT2"
+            android:exported="false" />
+        <activity
+            android:name=".IT1"
+            android:exported="false" />
+        <activity
+            android:name=".Score"
+            android:exported="false" />
+        <activity
+            android:name=".know5"
+            android:exported="false" />
+        <activity
+            android:name=".know4"
+            android:exported="false" />
+        <activity
+            android:name=".know3"
+            android:exported="false" />
+        <activity
+            android:name=".know2"
+            android:exported="false" />
+        <activity
+            android:name=".know1"
+            android:exported="false" />
+        <activity
+            android:name=".Quizz1"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
