@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class know3 extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,8 @@ public class know3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Venus=findViewById(R.id.Venus);
         Button Jupiter=findViewById(R.id.Jupiter);
         Button Mars=findViewById(R.id.Mars);
@@ -32,6 +35,7 @@ public class know3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know3.this,know4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -39,6 +43,7 @@ public class know3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know3.this,know4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -46,6 +51,9 @@ public class know3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know3.this,know4.class);
+
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -53,6 +61,7 @@ public class know3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know3.this,know4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -60,6 +69,7 @@ public class know3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know3.this,know4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

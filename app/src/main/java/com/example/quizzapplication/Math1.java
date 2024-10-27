@@ -33,6 +33,7 @@ public class Math1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Math1.this,Math2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -40,6 +41,7 @@ public class Math1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Math1.this,Math2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -47,6 +49,7 @@ public class Math1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Math1.this,Math2.class);
+                i.putExtra("score",1);
                 startActivity(i);
             }
         });
@@ -54,6 +57,7 @@ public class Math1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Math1.this,Math2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -61,6 +65,7 @@ public class Math1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Math1.this,Math2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });

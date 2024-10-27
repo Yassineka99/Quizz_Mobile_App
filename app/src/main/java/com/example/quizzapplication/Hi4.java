@@ -24,6 +24,8 @@ public class Hi4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Revolutionary=findViewById(R.id.Revolutionary);
         Button of=findViewById(R.id.of);
         Button American=findViewById(R.id.American);
@@ -33,6 +35,7 @@ public class Hi4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi4.this,Hi5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -40,6 +43,7 @@ public class Hi4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi4.this,Hi5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -47,6 +51,8 @@ public class Hi4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi4.this,Hi5.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -54,6 +60,7 @@ public class Hi4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi4.this,Hi5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -61,6 +68,7 @@ public class Hi4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi4.this,Hi5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

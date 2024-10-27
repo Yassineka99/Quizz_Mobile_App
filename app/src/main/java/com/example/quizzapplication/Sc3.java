@@ -25,6 +25,8 @@ public class Sc3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button Hydrogen=findViewById(R.id.Hydrogen);
         Button Oxygen=findViewById(R.id.Oxygen);
         Button Carbon=findViewById(R.id.Carbon);
@@ -34,6 +36,7 @@ public class Sc3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc3.this,Sc4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -41,6 +44,7 @@ public class Sc3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc3.this,Sc4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -48,6 +52,8 @@ public class Sc3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc3.this,Sc4.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -55,6 +61,7 @@ public class Sc3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc3.this,Sc4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -62,6 +69,7 @@ public class Sc3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc3.this,Sc4.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

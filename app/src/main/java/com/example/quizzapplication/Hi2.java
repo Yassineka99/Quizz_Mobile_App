@@ -24,6 +24,8 @@ public class Hi2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button a=findViewById(R.id.a);
         Button b=findViewById(R.id.b);
         Button c=findViewById(R.id.c);
@@ -33,6 +35,8 @@ public class Hi2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi2.this,Hi3.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -40,6 +44,7 @@ public class Hi2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi2.this,Hi3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -47,6 +52,7 @@ public class Hi2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi2.this,Hi3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -54,6 +60,7 @@ public class Hi2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi2.this,Hi3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -61,6 +68,7 @@ public class Hi2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Hi2.this,Hi3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

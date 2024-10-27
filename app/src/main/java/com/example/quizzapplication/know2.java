@@ -23,6 +23,9 @@ public class know2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
+
         Button Jane=findViewById(R.id.Jane);
         Button George=findViewById(R.id.George);
         Button William=findViewById(R.id.William);
@@ -32,6 +35,7 @@ public class know2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know2.this,know3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -39,6 +43,7 @@ public class know2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know2.this,know3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -46,6 +51,8 @@ public class know2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know2.this,know3.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -53,6 +60,7 @@ public class know2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know2.this,know3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -60,6 +68,7 @@ public class know2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know2.this,know3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

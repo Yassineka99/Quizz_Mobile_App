@@ -34,7 +34,10 @@ public class Quizz1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Quizz1.this,know1.class);
+
                 startActivity(i);
+                overridePendingTransition(R.anim.multi_stage_in, R.anim.multi_stage_out);
+
             }
         });
         it.setOnClickListener(new View.OnClickListener() {

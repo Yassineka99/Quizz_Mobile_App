@@ -24,6 +24,8 @@ public class IT5 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Hyper=findViewById(R.id.Hyper);
         Button HyperTech=findViewById(R.id.HyperTech);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button High=findViewById(R.id.High);
@@ -33,6 +35,7 @@ public class IT5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT5.this,Score.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -40,6 +43,7 @@ public class IT5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT5.this,Score.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -47,6 +51,7 @@ public class IT5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT5.this,Score.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -54,6 +59,7 @@ public class IT5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT5.this,Score.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -61,6 +67,8 @@ public class IT5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT5.this,Score.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });

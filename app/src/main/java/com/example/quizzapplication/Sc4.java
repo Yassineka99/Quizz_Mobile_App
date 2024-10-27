@@ -24,6 +24,8 @@ public class Sc4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Tooth=findViewById(R.id.Tooth);
         Button Bone=findViewById(R.id.Bone);
         Button Cartilage=findViewById(R.id.Cartilage);
@@ -33,6 +35,7 @@ public class Sc4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc4.this,Sc5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -40,6 +43,7 @@ public class Sc4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc4.this,Sc5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -47,6 +51,7 @@ public class Sc4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc4.this,Sc5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -54,6 +59,8 @@ public class Sc4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc4.this,Sc5.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -61,6 +68,7 @@ public class Sc4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc4.this,Sc5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });

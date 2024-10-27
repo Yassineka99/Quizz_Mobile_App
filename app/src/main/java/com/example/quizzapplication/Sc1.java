@@ -32,6 +32,7 @@ public class Sc1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc1.this,Sc2.class);
+                i.putExtra("score",1);
                 startActivity(i);
             }
         });
@@ -39,6 +40,7 @@ public class Sc1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc1.this,Sc2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -46,6 +48,7 @@ public class Sc1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc1.this,Sc2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -53,6 +56,7 @@ public class Sc1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc1.this,Sc2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -60,6 +64,7 @@ public class Sc1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc1.this,Sc2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });

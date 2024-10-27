@@ -13,25 +13,32 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class know1 extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_know1);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
         Button Ottawa=findViewById(R.id.Ottawa);
         Button Toronto=findViewById(R.id.Toronto);
         Button Vancouver=findViewById(R.id.Vancouver);
         Button Montreal=findViewById(R.id.Montreal);
         Button Quebec=findViewById(R.id.Quebec);
+
         Ottawa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know1.this,know2.class);
+                i.putExtra("score",1);
+
                 startActivity(i);
             }
         });
@@ -39,6 +46,8 @@ public class know1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know1.this,know2.class);
+                i.putExtra("score",0);
+
                 startActivity(i);
             }
         });
@@ -46,6 +55,7 @@ public class know1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know1.this,know2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -53,6 +63,7 @@ public class know1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know1.this,know2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });
@@ -60,6 +71,7 @@ public class know1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know1.this,know2.class);
+                i.putExtra("score",0);
                 startActivity(i);
             }
         });

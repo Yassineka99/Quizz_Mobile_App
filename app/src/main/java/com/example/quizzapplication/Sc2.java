@@ -23,6 +23,8 @@ public class Sc2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Jupiter=findViewById(R.id.Jupiter);
         Button Earth=findViewById(R.id.Earth);
         Button Venus=findViewById(R.id.Venus);
@@ -32,6 +34,8 @@ public class Sc2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc2.this,Sc3.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -39,6 +43,8 @@ public class Sc2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc2.this,Sc3.class);
+                i.putExtra("score",sss);
+
                 startActivity(i);
             }
         });
@@ -46,13 +52,17 @@ public class Sc2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc2.this,Sc3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
+
             }
         });
         Jupiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc2.this,Sc3.class);
+                i.putExtra("score",sss);
+                startActivity(i);
                 startActivity(i);
             }
         });
@@ -60,7 +70,9 @@ public class Sc2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Sc2.this,Sc3.class);
+                i.putExtra("score",sss);
                 startActivity(i);
+
             }
         });
     }

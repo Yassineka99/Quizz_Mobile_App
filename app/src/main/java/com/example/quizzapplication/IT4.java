@@ -24,6 +24,8 @@ public class IT4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Docker=findViewById(R.id.Docker);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button Studio=findViewById(R.id.Studio);
         Button MySQL=findViewById(R.id.MySQL);
@@ -33,6 +35,7 @@ public class IT4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT4.this,IT5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -40,6 +43,7 @@ public class IT4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT4.this,IT5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -47,6 +51,7 @@ public class IT4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT4.this,IT5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -54,6 +59,7 @@ public class IT4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT4.this,IT5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -61,6 +67,8 @@ public class IT4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(IT4.this,IT5.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });

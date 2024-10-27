@@ -23,6 +23,8 @@ public class know4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent i2=getIntent();
+        int sss = i2.getIntExtra("score",0);
         Button Vietnam=findViewById(R.id.Vietnam);
         Button Thailand=findViewById(R.id.Thailand);
         Button Japan=findViewById(R.id.Japan);
@@ -32,6 +34,7 @@ public class know4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know4.this,know5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -39,6 +42,7 @@ public class know4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know4.this,know5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -46,6 +50,7 @@ public class know4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know4.this,know5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
@@ -53,6 +58,8 @@ public class know4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know4.this,know5.class);
+                int ss=sss+1;
+                i.putExtra("score",ss);
                 startActivity(i);
             }
         });
@@ -60,6 +67,7 @@ public class know4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(know4.this,know5.class);
+                i.putExtra("score",sss);
                 startActivity(i);
             }
         });
