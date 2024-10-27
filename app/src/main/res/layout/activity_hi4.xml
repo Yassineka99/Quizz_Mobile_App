@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@+id/Revolutionary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/design"
+
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
